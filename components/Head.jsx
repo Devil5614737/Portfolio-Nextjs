@@ -10,7 +10,7 @@ export const HEAD = () => {
       <meta name="HandheldFriendly" content="True" />
       <meta name="MobileOptimized" content="320" />
       <meta name="viewport" content="width=device-width,minimum-scale=1" />
-      <link rel="canonical" href="https://portfolio3-omega.vercel.app/" />
+      <link rel="canonical" href="https://portfolio-next-js-iota.vercel.app/" />
       <meta
         name="description"
         content="This is the full stack web developer portfolio of KAUSHIK SHEEL....."
@@ -29,7 +29,7 @@ export const HEAD = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Kaushik's Portfolio</title>
       <meta property="og:title" content="Web Developer Portfolio" />
-      <meta property="og:url" content="https://portfolio3-omega.vercel.app/" />
+      <meta property="og:url" content="https://portfolio-next-js-iota.vercel.app/" />
       <meta
         property="og:image"
         content="https://res.cloudinary.com/dwtpwuwax/image/upload/v1652335935/undraw_male_avatar_323b_a2vvwt.png"
@@ -52,7 +52,7 @@ export const HEAD = () => {
         href="%PUBLIC_URL%/favicon.svg"
       />
       <meta name="theme-color" content="#454e56" />
-      <title>React App</title>
+      <title>Kaushik's Portfolio</title>
     </Head>
   );
 };
