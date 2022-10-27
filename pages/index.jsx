@@ -32,7 +32,7 @@ export default function Home() {
       <header className="relative w-[100vw] min-h-[100vh]">
         <Navbar />
         <Hero />
-        {show && <ToTopButton />}
+        {/* {show && <ToTopButton />} */}
       </header>
       <main className="mt-[3rem]">
         <section
