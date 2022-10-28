@@ -45,7 +45,7 @@ export const Contact = () => {
         <div id="contact" className="w-fit m-auto text-center mb-9">
           <h2 className="font-bold text-[2rem] md:text-[2.6rem]">Contact</h2>
           <p className="text-[#5750EC]   text-[1.5rem]">
-            Wanna hire me? Let's Talk!
+            Want to hire me? Let's Talk!
           </p>
           <div className="flex items-center gap-7 mt-6">
             <a href="https://github.com/Devil5614737" target='_blank' rel="noreferrer" className="text-[1.5rem]  flex items-center gap-2">
@@ -54,7 +54,7 @@ export const Contact = () => {
               width={20}
               height={20}
               objectFit='contain'
-              alt='github icon'
+              alt='Github Icon'
               />
               Github</a>
             <a href="https://www.linkedin.com/in/kaushik-sheel-691882157/" target='_blank' rel="noreferrer" className="text-[1.5rem]  flex items-center gap-2">
@@ -63,7 +63,7 @@ export const Contact = () => {
               width={20}
               height={20}
               objectFit='contain'
-              alt='github icon'
+              alt='Linked -In icon'
               />
               LinkedIn</a>
             <a href="#!" className="text-[1.5rem]  flex items-center gap-2">

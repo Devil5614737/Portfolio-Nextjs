@@ -10,7 +10,7 @@ export const Skill = ({title,icon,color}) => {
         width={40}
         height={40}
         objectFit='contain'
-        alt='html icon'
+        alt='icon of user skill'
         />
     </div>
     <p className='mt-2 text-[1.7rem]'>{title}</p>
