@@ -27,7 +27,7 @@ export const HEAD = () => {
       />
       <meta name="author" content="Kaushik sheel" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Kaushik's Portfolio</title>
+      <title>Front-End Web Developer Portfolio</title>
       <meta property="og:title" content="Web Developer Portfolio" />
       <meta property="og:url" content="https://portfolio-next-js-iota.vercel.app/" />
       <meta
@@ -52,7 +52,7 @@ export const HEAD = () => {
         href="%PUBLIC_URL%/favicon.svg"
       />
       <meta name="theme-color" content="#454e56" />
-      <title>Kaushik's Portfolio</title>
+      <title>Front-End Web Developer Portfolio</title>
     </Head>
   );
 };
