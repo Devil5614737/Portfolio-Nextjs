@@ -66,7 +66,7 @@ export const ProjectContainer = () => {
     <Container>
       <div id="projects" className=" px-3">
         <div className="w-fit m-auto text-center">
-          <h3 className="font-bold text-[2rem] md:text-[2.6rem]">Projects</h3>
+          <h2 className="font-bold text-[2rem] md:text-[2.6rem]">Projects</h2>
           <p className="text-[#5750EC]   text-[1.5rem]">
             here are some of my projects
           </p>

@@ -16,7 +16,7 @@ export const Skills = () => {
   transition={{duration:0.5,type:'spring'}}
     >
     <div id='skills' className="wrapper w-fit m-auto text-center">
-        <h3 className="font-bold text-[2rem] md:text-[2.6rem]">Skills</h3>
+        <h2 className="font-bold text-[2rem] md:text-[2.6rem]">Skills</h2>
         <p className="text-[#5750EC]   text-[1.5rem]">tools and techs i know</p>
       </div>
       <div className="mt-[3rem] skills grid  grid-cols-3 md:grid-cols-5 place-items-center">

@@ -35,7 +35,7 @@ const[about,setAbout]=useState()
   return (
     <Container>
         <div id='about' className="w-fit m-auto text-center">
-          <h3 className="font-bold text-[2rem] md:text-[2.6rem]">About</h3>
+          <h2 className="font-bold text-[2rem] md:text-[2.6rem]">About</h2>
         </div>
         <div className="wrapper px-3 mt-[3rem]  bg-[#5750EC] md:px-[4rem] py-[4rem]">
          <div className="flex flex-col md:flex-row  md:grid-cols-2 md:gap-7">

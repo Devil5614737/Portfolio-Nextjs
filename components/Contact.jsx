@@ -43,7 +43,7 @@ export const Contact = () => {
         transition={{ duration: 0.5, type: "spring" }}
       >
         <div id="contact" className="w-fit m-auto text-center mb-9">
-          <h3 className="font-bold text-[2rem] md:text-[2.6rem]">Contact</h3>
+          <h2 className="font-bold text-[2rem] md:text-[2.6rem]">Contact</h2>
           <p className="text-[#5750EC]   text-[1.5rem]">
             Wanna hire me? Let's Talk!
           </p>
