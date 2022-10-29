@@ -12,8 +12,7 @@ import ToTopButton from "../components/ToTopButton";
 import { useState } from "react";
 
 export default function Home() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -32,16 +31,11 @@ export default function Home() {
       <header className="relative w-[100vw] min-h-[100vh]">
         <Navbar />
         <Hero />
-        {/* {show && <ToTopButton />} */}
+        {show && <ToTopButton />}
       </header>
       <main className="mt-[3rem]">
         <section
-          ref={ref}
-          style={{
-            transform: isInView ? "none" : "translateX(-200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-          }}
+         
         >
           <ProjectContainer />
         </section>
