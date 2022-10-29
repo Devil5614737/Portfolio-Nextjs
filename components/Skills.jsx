@@ -8,12 +8,12 @@ export const Skills = () => {
   return (
     <Container>
     <motion.div
-     whileInView={{
-      x:[100,0],
-    
-      opacity:[0,1]
-  }}
-  transition={{duration:0.5,type:'spring'}}
+      whileInView={{
+        x: [0, 0],
+        y: [100, 0],
+        opacity: [0, 1],
+      }}
+      transition={{ duration: 0.5, type: "spring" }}
     >
     <div id='skills' className="wrapper w-fit m-auto text-center">
         <h2 className="font-bold text-[2rem] md:text-[2.6rem]">Skills</h2>
