@@ -7,18 +7,22 @@ import {motion} from 'framer-motion';
 export const Skills = () => {
   return (
     <Container>
+    <div
+  
+    >
     <motion.div
-      whileInView={{
-        x: [0, 0],
-        y: [100, 0],
+       whileInView={{
+        x: [-100, 0],
         opacity: [0, 1],
       }}
-      transition={{ duration: 0.5, type: "spring" }}
-    >
-    <div id='skills' className="wrapper w-fit m-auto text-center">
-        <h2 className="font-bold text-[2rem] md:text-[2.6rem]">Skills</h2>
+    id='skills' className="wrapper w-fit m-auto text-center ">
+        <h2
+        
+        
+         className="font-bold text-[2rem] md:text-[2.6rem]">Skills</h2
+        >
         <p className="text-[#5750EC]   text-[1.5rem]">tools and techs i know</p>
-      </div>
+      </motion.div>
       <div className="mt-[3rem] skills grid  grid-cols-3 md:grid-cols-5 place-items-center">
         <Skill title="Html" icon="/htmlIcon.svg" color="#FEDFD7" />
         <Skill title="Css" icon="/cssIcon.svg" color="#D3DCFB" />
@@ -33,7 +37,7 @@ export const Skills = () => {
         <Skill title="Sass" icon="/sassIcon.svg" color="#FFD9EC" />
       </div>
 
-    </motion.div>
+    </div>
     </Container>
   );
 };

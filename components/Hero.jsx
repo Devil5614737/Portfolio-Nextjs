@@ -9,8 +9,7 @@ export const Hero = () => {
         <span className="text-[#5750EC] hover:underline">Web Developer</span>
       </h1>
       <p className="text-[#6B7280] text-center md:max-w-[50rem] max-w-[30rem] md:text-[1.8rem] text-[1.4rem] leading-loose mb-5 mt-4">
-        Hello!! my name is `Kaushik Sheel` passionate Front-End Web Developer,
-        love to build amazing products and solving problems...
+      Hello, I'm a Frontend Web Developer I strives to build immersiveand beautiful web applications through carefully crafted code anduser-centric design.
       </p>
       <a
         href="#projects"

@@ -5,6 +5,9 @@ import { useState } from 'react'
 import { client } from '../sanity/client'
 import { Container } from './Container';
 import sanityClient from '@sanity/client';
+import {ArrowDownTrayIcon} from '@heroicons/react/24/solid'
+import { motion } from 'framer-motion'
+
 
 export const About = () => {
 const[about,setAbout]=useState()
@@ -33,35 +36,57 @@ const[about,setAbout]=useState()
 
 
   return (
-    <Container>
+  <>
         <div id='about' className="w-fit m-auto text-center">
-          <h2 className="font-bold text-[2rem] md:text-[2.6rem]">About</h2>
+          <motion.h2
+            whileInView={{
+              x: [-100, 0],
+              opacity: [0, 1],
+             }}
+             transition={{ duration: 0.5, type: "spring" }}
+
+          className="font-bold text-[2rem] md:text-[2.6rem]">About</motion.h2>
         </div>
-        <div className="wrapper px-3 mt-[3rem]  bg-[#5750EC] md:px-[4rem] py-[4rem]">
+        <div className="wrapper px-3 mt-[3rem]  bg-[#5750EC] md:px-[4rem] py-[8rem]">
+          <Container>
          <div className="flex flex-col md:flex-row  md:grid-cols-2 md:gap-7">
-         <div className="my-image mb-4 m-auto md:m-0">
+         <motion.div
+         whileInView={{
+          x: [0, 0],
+          y: [0, 0],
+      scale:[.5,1],
+          opacity: [0, 1],
+        }}
+        transition={{ duration: 0.5, type: "spring" }}
+         className="my-image mb-4 m-auto md:m-0">
+          
             <Image
           {...imageProps}
-          width={300}
-          height={300}
+          width={500}
+          height={600}
           loading="lazy"
           objectFit="cover"
           className="rounded-lg"
           alt='me'
         />
-            </div>
-            <div className="md:mt-6">
-            <p className='md:mb-6 md:text-start text-center md:text-[1.8rem] text-[1.5rem] text-white md:max-w-[70%] md:leading-[3rem]'>{about&&about[0].desc}</p>
-            <a target={'_blank'} href={about&&about[0].resumeLink} 
-            rel='noreferrer'
-            class="md:m-0 mt-3 w-fit grid m-auto md:px-8 px-5 py-2.5 relative rounded group overflow-hidden font-medium bg-purple-50 text-black ">
-<span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-[#5750EC] group-hover:h-full opacity-90"></span>
-<span class="relative group-hover:text-white text-[1.6rem]">Resume</span>
-</a>
-            </div>
+            </motion.div>
+            <motion.div
+            whileInView={{
+              x: [100, 0],
+              opacity: [0, 1],
+             }}
+            className="md:mt-6 md:self-center md:ml-5">
+
+            <p className='md:mb-6 md:text-start text-center md:text-[2rem] text-[1.5rem] text-white md:max-w-[70%] md:leading-[4rem]'>{about&&about[0].desc}</p>
+<a target={'_blank'} href={about&&about[0].resumeLink} 
+            rel='noreferrer' className='flex w-fit  text-3xl border-2 border-[#D6D6D6] px-8 py-5 rounded-xl items-center gap-x-6 m-auto md:m-0 md:mt-7 mt-7 text-white'>
+    <span><ArrowDownTrayIcon className='w-8 h-8 mt-[-5px]'/></span>
+    RESUME</a>
+            </motion.div>
           
          </div>
+         </Container>
         </div>
-    </Container>
+</>
   )
 }

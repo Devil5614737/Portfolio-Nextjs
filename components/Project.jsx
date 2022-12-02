@@ -29,7 +29,8 @@ const configuredSanityClient = sanityClient({
     <motion.div
     whileInView={{
       x: [0, 0],
-      y: [100, 0],
+      y: [0, 0],
+  scale:[.5,1],
       opacity: [0, 1],
     }}
     transition={{ duration: 0.5, type: "spring" }}

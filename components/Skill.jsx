@@ -1,9 +1,18 @@
 import Image from 'next/image'
 import React from 'react'
+import {motion} from 'framer-motion'
 
 export const Skill = ({title,icon,color}) => {
   return (
-    <div className="icon w-fit grid place-items-center mb-[4rem]">
+    <motion.div
+    whileInView={{
+      x: [0, 0],
+      y: [0, 0],
+  scale:[.5,1],
+      opacity: [0, 1],
+    }}
+    transition={{ duration: 0.5, type: "spring" }}
+     className="icon w-fit grid place-items-center mb-[4rem]">
     <div className={`skill rounded-full p-9  w-fit`} style={{background:color}}>
         <Image
         src={icon}
@@ -14,6 +23,6 @@ export const Skill = ({title,icon,color}) => {
         />
     </div>
     <p className='mt-2 text-[1.7rem]'>{title}</p>
-    </div>
+    </motion.div>
   )
 }

@@ -34,15 +34,17 @@ export const Contact = () => {
 
   return (
     <Container>
-      <motion.div
-        whileInView={{
-          x: [0, 0],
-          y: [100, 0],
-          opacity: [0, 1],
-        }}
-        transition={{ duration: 0.5, type: "spring" }}
+      <div
+      
       >
-        <div id="contact" className="w-fit m-auto text-center mb-9">
+        <motion.div 
+         whileInView={{
+           x: [-100, 0],
+           opacity: [0, 1],
+          }}
+          transition={{ duration: 0.5, type: "spring" }}
+        
+        id="contact" className="w-fit m-auto text-center mb-9">
           <h2 className="font-bold text-[2rem] md:text-[2.6rem]">Contact</h2>
           <p className="text-[#5750EC]   text-[1.5rem]">
             Want to hire me? Let's Talk!
@@ -76,8 +78,13 @@ export const Contact = () => {
               />
               +918299434789</a>
           </div>
-        </div>
-        <form
+        </motion.div>
+        <motion.form
+         whileInView={{
+          x: [0, 0],
+          y: [100, 0],
+          opacity: [0, 1],
+        }}
           id="myForm"
           onSubmit={sendEmail}
           ref={form}
@@ -116,14 +123,14 @@ export const Contact = () => {
               Submit
             </span>
           </button>
-        </form>
+        </motion.form>
         <Toaster
           position="top-center"
           toastOptions={{
             duration: 1500,
           }}
         />
-      </motion.div>
+      </div>
     </Container>
   );
 };
