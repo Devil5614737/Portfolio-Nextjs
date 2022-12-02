@@ -11,7 +11,9 @@ import { Skills } from "../components/Skills";
 import ToTopButton from "../components/ToTopButton";
 import { useState } from "react";
 
+
 export default function Home() {
+
 
   const [show, setShow] = useState(false);
 
@@ -52,3 +54,4 @@ export default function Home() {
     </>
   );
 }
+

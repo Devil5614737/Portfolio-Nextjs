@@ -1,26 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
-import sanityClient from '@sanity/client';
-import { useNextSanityImage } from "next-sanity-image";
 import { motion } from "framer-motion";
 
 
-export const Project = ({project,img}) => {
-
-
-
-const configuredSanityClient = sanityClient({
-	projectId:process.env.NEXT_PUBLIC_PROJECT_ID,
-	dataset:process.env.NEXT_PUBLIC_DATASET,
-	useCdn: true
-});
-
-
-	const imageProps = useNextSanityImage(
-		configuredSanityClient,
-		project.imageUrl
-	);
+export const Project = ({project}) => {
 
 
 
@@ -37,7 +21,7 @@ const configuredSanityClient = sanityClient({
      className="">
       <div className="thumbnail w-full ">
         <Image
-        {...imageProps} 
+        src={project.src}
           width={0}
           height={0}
           layout="responsive"
@@ -53,13 +37,13 @@ const configuredSanityClient = sanityClient({
           {project.desc}
         </p>
         <div className="cta flex gap-6">
-          <a target='_blank' rel="noreferrer"  className="font-[500] text-[1.4rem] flex items-center gap-1 hover:gap-2 transition-all" href={project.demoLink}>
+          <a target='_blank' rel="noreferrer"  className="font-[500] text-[1.4rem] flex items-center gap-1 hover:gap-2 transition-all" href={project.demo_link}>
             Live Demo{" "}
             <span>
               <ArrowRightIcon className="w-7 h-1w-7" />
             </span>
           </a>
-          <a target='_blank' rel="noreferrer"   className="font-[500] text-[1.4rem] flex items-center gap-1 text-[#5750EC] hover:gap-2 transition-all" href={project.githubLink}>
+          <a target='_blank' rel="noreferrer"   className="font-[500] text-[1.4rem] flex items-center gap-1 text-[#5750EC] hover:gap-2 transition-all" href={project.github_link}>
             Source Code{" "}
             <span>
               <ArrowRightIcon className="w-7 h-1w-7" />

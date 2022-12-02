@@ -94,6 +94,7 @@ export const Contact = () => {
             Name
           </label>
           <input
+          id="name"
             name="name"
             type="text"
             required
@@ -103,6 +104,7 @@ export const Contact = () => {
             Email
           </label>
           <input
+          name="email"
             id="email"
             type="email"
             required
@@ -112,6 +114,7 @@ export const Contact = () => {
             Message
           </label>
           <textarea
+          name='message'
             id="message"
             type="text"
             required
@@ -128,6 +131,9 @@ export const Contact = () => {
           position="top-center"
           toastOptions={{
             duration: 1500,
+            style:{
+              fontSize:14
+            }
           }}
         />
       </div>
