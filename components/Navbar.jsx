@@ -4,6 +4,7 @@ import Bars3Icon from "@heroicons/react/24/outline/Bars3Icon";
 import MoonIcon from "@heroicons/react/24/outline/MoonIcon";
 import { CodeBracketIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
+import {motion} from 'framer-motion'
 
 export const Navbar = () => {
 const[active,setActive]=useState(false)
@@ -31,6 +32,25 @@ const[active,setActive]=useState(false)
       document.body.classList.add("active");
     }
   }, [themeActive]);
+
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  }
+    
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  }
 
   return (
     <>
@@ -93,19 +113,20 @@ const[active,setActive]=useState(false)
       </Container>
           {active&&
           <div className="absolute mob-menu  md:hidden w-[100vw] min-h-[100vh] bg-white py-[8rem] z-50">
-          <ul className=" flex flex-col justify-around  items-center gap-11">
-           <li><a className="hover:underline text-[2.5rem]" href="#hero">Home</a></li>
-           <li><a className="hover:underline text-[2.5rem]" href="#projects">Projects</a></li>
-           <li><a className="hover:underline text-[2.5rem]" href="#skills">Skills</a></li>
-           <li><a className="hover:underline text-[2.5rem]" href="#contact">Contact</a></li>
-           <div
+          <motion.ul initial="hidden"
+    animate="visible" variants={container} className=" flex flex-col justify-around  items-center gap-11">
+           <motion.li variants={item}><a className="hover:underline text-[2.5rem]" href="#hero">Home</a></motion.li>
+           <motion.li variants={item}><a className="hover:underline text-[2.5rem]" href="#projects">Projects</a></motion.li>
+           <motion.li variants={item}><a className="hover:underline text-[2.5rem]" href="#skills">Skills</a></motion.li>
+           <motion.li variants={item}><a className="hover:underline text-[2.5rem]" href="#contact">Contact</a></motion.li>
+           <motion.div variants={item}
                     className="theme  shadow-categoryShadow bg-white px-5 py-3 rounded-lg grid place-items-center cursor-pointer"
                     onClick={handleTheme}
                   >
                     <MoonIcon className="w-8 h-8 " />
-                  </div>
+                  </motion.div>
          
-          </ul>
+          </motion.ul>
           <XMarkIcon onClick={()=>setActive(false)} className="absolute top-5 right-6 w-[3.5rem] h-[3.5rem] cursor-pointer"/>
                    </div>}
     </nav>
