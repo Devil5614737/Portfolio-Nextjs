@@ -17,15 +17,15 @@ export const data=[
         src:"/assets/netflix.png",
         github_link:"https://github.com/Devil5614737/Netflix-Clone-Next.js"
     },
-    {
-        id:2,
-        title:"FullStack Blog Website",
-        tag:"web app",
-        desc:"A FullStack Blog website built with Next.js,Typescript,Node.js,MongoDb and Tailwind css",
-        demo_link:"https://blog-app-ashen-one.vercel.app/",
-        src:"/assets/fullstack-blog.png",
-        github_link:"https://github.com/Devil5614737/BlogApp"
-    },
+    // {
+    //     id:2,
+    //     title:"FullStack Blog Website",
+    //     tag:"web app",
+    //     desc:"A FullStack Blog website built with Next.js,Typescript,Node.js,MongoDb and Tailwind css",
+    //     demo_link:"https://blog-app-ashen-one.vercel.app/",
+    //     src:"/assets/fullstack-blog.png",
+    //     github_link:"https://github.com/Devil5614737/BlogApp"
+    // },
     {
         id:3,
         title:"Todo App",
