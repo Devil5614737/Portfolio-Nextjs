@@ -77,7 +77,7 @@ export const About = () => {
               </p>
               <a
                 target={"_blank"}
-                href={about && about[0].resumeLink}
+                href={"https://drive.google.com/file/d/1h1q8lrUCXf2R9jrqWyEikwv29aomxJoI/view"}
                 rel="noreferrer"
                 className="flex w-fit  text-3xl border-2 border-[#D6D6D6] px-8 py-5 rounded-xl items-center gap-x-6 m-auto md:m-0 md:mt-7 mt-7 text-white"
               >
