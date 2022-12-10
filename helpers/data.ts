@@ -36,6 +36,15 @@ export const data=[
         github_link:"https://github.com/Devil5614737/TodoAppWithTypescript2"
     },
     {
+        id:6,
+        title:"Twitter Clone",
+        tag:"Clone",
+        desc:"A Clone of Instagram, built with Next.js, Firebase ,Typescript and Tailwind",
+        demo_link:"https://twitter-clone-a3dn.vercel.app/",
+        src:"/assets/twitter.png",
+        github_link:"https://github.com/Devil5614737/TwitterClone"
+    },
+    {
         id:5,
         title:"Instagram Clone",
         tag:"clone",
