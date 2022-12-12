@@ -41,7 +41,7 @@ export const data=[
         tag:"Clone",
         desc:"A Clone of Instagram, built with Next.js, Firebase ,Typescript and Tailwind",
         demo_link:"https://twitter-clone-a3dn.vercel.app/",
-        src:"/assets/twitter.png",
+        src:"/assets/twitter.PNG",
         github_link:"https://github.com/Devil5614737/TwitterClone"
     },
     {
@@ -52,5 +52,14 @@ export const data=[
         demo_link:"https://instagram-clone-react-firebase.vercel.app/dashboard",
         src:"/assets/instagram.png",
         github_link:"https://github.com/Devil5614737/InstagramCloneReact-Firebase"
+    },
+    {
+        id:7,
+        title:"Movies App",
+        tag:"web app",
+        desc:"A movie app built with React and Bootstrap",
+        demo_link:"https://moviehub56.netlify.app/",
+        src:"/assets/movieapp.png",
+        github_link:"https://github.com/Devil5614737/MovieApp-New"
     },
 ]
