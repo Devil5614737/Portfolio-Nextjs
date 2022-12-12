@@ -41,7 +41,7 @@ export const data=[
         tag:"Clone",
         desc:"A Clone of Instagram, built with Next.js, Firebase ,Typescript and Tailwind",
         demo_link:"https://twitter-clone-a3dn.vercel.app/",
-        src:"/assets/twitter.PNG",
+        src:"/assets/twitter.png",
         github_link:"https://github.com/Devil5614737/TwitterClone"
     },
     {
