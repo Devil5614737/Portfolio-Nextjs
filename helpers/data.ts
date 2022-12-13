@@ -62,4 +62,13 @@ export const data=[
         src:"/assets/movieapp.png",
         github_link:"https://github.com/Devil5614737/MovieApp-New"
     },
+    {
+        id:8,
+        title:"Blog App (Mern)",
+        tag:"web app",
+        desc:"A blog app built with React,Typescript ,Node.js ,MongoDB and Material UI",
+        demo_link:"https://blog-app-new-puce.vercel.app/",
+        src:"/assets/blogApp2.png",
+        github_link:"https://github.com/Devil5614737/BlogAppNew"
+    },
 ]
