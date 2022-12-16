@@ -71,4 +71,13 @@ export const data=[
         src:"/assets/blogApp2.png",
         github_link:"https://github.com/Devil5614737/BlogAppNew"
     },
+    {
+        id:8,
+        title:"Hotel Booking",
+        tag:"web app",
+        desc:"A blog app built with React ,Firebase and Material UI",
+        demo_link:"https://bookstay.netlify.app/",
+        src:"/assets/hotelbooking.png",
+        github_link:"https://github.com/Devil5614737/Hotel-Booking-WebApp"
+    },
 ]
