@@ -49,7 +49,7 @@ export const data=[
         title:"Instagram Clone",
         tag:"clone",
         desc:"A Clone of Instagram, built with Reactjs, Firebase and Material UI",
-        demo_link:"https://instagram-clone-react-firebase.vercel.app/dashboard",
+        demo_link:"https://63a30ca7281d050e0172345d--legendary-semolina-3b6baf.netlify.app/",
         src:"/assets/instagram.png",
         github_link:"https://github.com/Devil5614737/InstagramCloneReact-Firebase"
     },
