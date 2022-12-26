@@ -53,12 +53,12 @@ export const About = () => {
                 opacity: [0, 1],
               }}
               transition={{ duration: 0.5, type: "spring" }}
-              className="my-image mb-4 m-auto md:m-0"
+              className="my-image mb-4 m-auto md:m-0 self-center"
             >
               <Image
                 {...imageProps}
-                width={500}
-                height={600}
+                width={700}
+                height={900}
                 loading="lazy"
                 objectFit="cover"
                 className="rounded-lg "
@@ -72,7 +72,7 @@ export const About = () => {
               }}
               className="md:mt-6 md:self-center md:ml-5"
             >
-              <p className="md:mb-6 md:text-start text-center md:text-[2rem] text-[1.5rem] text-white md:max-w-[70%] md:leading-[4rem]">
+              <p className="md:mb-6 md:text-start text-center md:text-[2rem] text-[1.5rem] text-white  md:leading-[4rem]">
               As a frontend developer, my focus is on creating intuitive and visually stunning user interfaces for web applications and websites, always learning and staying up-to-date with the latest technologies and best practices in the field. . I am a fast learner and thrive in collaborative environments, and am always looking for ways to improve my skills and contribute.
                 {/* {about && about[0].desc} */}
               </p>
