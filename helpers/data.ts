@@ -80,4 +80,14 @@ export const data=[
         src:"/assets/hotelbooking.png",
         github_link:"https://github.com/Devil5614737/Hotel-Booking-WebApp"
     },
+    {
+        id:9,
+        title:"FullStack Social Media App (Mern)",
+        tag:"web app",
+        desc:"Built with React, Node.js, MongoDb and Tailwind",
+        demo_link:"https://spiffy-moonbeam-a9324b.netlify.app/",
+        src:"/assets/socialmedia.png",
+        github_link:"https://github.com/Devil5614737/SocialMeidaNew"
+    },
 ]
+    
