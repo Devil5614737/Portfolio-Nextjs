@@ -77,7 +77,7 @@ export const About = () => {
               </p>
               <a
                 target={"_blank"}
-                href={"https://drive.google.com/file/d/1F-N6IDF1y_OgGTeeSUf4fpdjOMRQdQla/view?usp=share_link"}
+                href={"https://drive.google.com/file/d/10vGV6NMksusdDyibR6IgFT6QANWoDRif/view?usp=sharing"}
                 rel="noreferrer"
                 className="flex w-fit  text-3xl border-2 border-[#D6D6D6] px-8 py-5 rounded-xl items-center gap-x-6 m-auto md:m-0 md:mt-7 mt-7 text-white"
               >
