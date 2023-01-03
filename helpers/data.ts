@@ -6,7 +6,7 @@ export const data=[
         desc:"A FullStack Ecommerce Website , built with Next.js,Node.js,MongoDb,Typescript and Tailwind",
         demo_link:"https://shoes-store-frontend-typescript.vercel.app/login",
         src:"/assets/ecommerce2.png",
-        github_link:"https://shoes-store-frontend-typescript.vercel.app/products"
+        github_link:"https://github.com/Devil5614737/ShoesStore-Frontend-Typescript"
     },
     {
         id:1,
