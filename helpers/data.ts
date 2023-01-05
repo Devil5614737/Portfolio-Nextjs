@@ -89,5 +89,14 @@ export const data=[
         src:"/assets/socialmedia.png",
         github_link:"https://github.com/Devil5614737/SocialMeidaNew"
     },
+    {
+        id:10,
+        title:"Realtime Chat Application (Mern)",
+        tag:"web app",
+        desc:"Built with React, Node.js, MongoDb ,SocketIo and Chakra UI",
+        demo_link:"https://merry-madeleine-8c62a1.netlify.app/",
+        src:"/assets/chatapp.png",
+        github_link:"https://github.com/Devil5614737/coversate-chat-app"
+    },
 ]
     
