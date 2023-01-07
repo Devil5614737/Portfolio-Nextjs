@@ -98,5 +98,14 @@ export const data=[
         src:"/assets/chatapp.png",
         github_link:"https://github.com/Devil5614737/coversate-chat-app"
     },
+    {
+        id:11,
+        title:"Realtime Code Editor",
+        tag:"web app",
+        desc:"Built with React, Node.js ,SocketIo and Tailwind",
+        demo_link:"https://musical-khapse-5244f7.netlify.app/",
+        src:"/assets/codeEditor.png",
+        github_link:"https://github.com/Devil5614737/realtime-code-editor"
+    },
 ]
     
